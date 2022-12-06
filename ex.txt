@@ -15,7 +15,7 @@ WHERE `cfu` > 10;
 
 SELECT * 
 FROM `students` 
-WHERE YEAR(`date_of_birth`) <= 1992
+WHERE YEAR(CURRENT_DATE()) - YEAR(`date_of_birth`) >= 30
 ORDER BY `date_of_birth` DESC;
 
 
